@@ -1,0 +1,31 @@
+{
+  "name": "preact-starter",
+  "version": "1.0.0",
+  "description": "Barebones starter for a preact project",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "vite build",
+    "serve": "vite preview",
+    "start": "vite",
+    "lint": "prettier --check **/*.{js,jsx,ts,tsx,css,md,html,yml,yaml,json}",
+    "lint:fix": "prettier --write **/*.{js,jsx,ts,tsx,css,md,html,yml,yaml,json}",
+    "prepare": "husky install"
+  },
+  "author": "Andre Wiggins",
+  "license": "MIT",
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,css,md,html,yml,yaml,json}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "preact": "^10.11.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.4.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "vite": "^3.1.4"
+  }
+}
