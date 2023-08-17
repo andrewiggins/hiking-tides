@@ -1,7 +1,7 @@
 {
-  "name": "preact-starter",
+  "name": "hiking-tides",
   "version": "1.0.0",
-  "description": "Barebones starter for a preact project",
+  "description": "A website to understand tides when hiking around the US ",
   "main": "dist/index.js",
   "scripts": {
     "build": "vite build",
