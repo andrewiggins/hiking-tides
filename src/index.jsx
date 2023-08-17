@@ -1,6 +1,7 @@
 import { render } from "preact";
 import "./index.css";
 import { getTidePredictions } from "./api";
+import { Options } from "./Options";
 
 const root = document.getElementById("root");
 render(<div>Loading...</div>, root);
@@ -18,5 +19,11 @@ getTidePredictions({
 	units: "metric",
 	interval: "hilo",
 }).then((data) => {
-	render(<div>{JSON.stringify(data)}</div>, root);
+	render(
+		<div>
+			<Options />
+			{JSON.stringify(data)}
+		</div>,
+		root
+	);
 });
